@@ -1,0 +1,13 @@
+targets:
+  $default:
+    builders:
+      firebase_ai_wrapper|ai_function_builder:
+        enabled: true
+
+builders:
+  ai_function_builder:
+    import: "package:firebase_ai_wrapper/src/generator/builder.dart"
+    builder_factories: ["aiFunctionBuilder"]
+    build_extensions: {".dart": [".ai.dart"]}
+    auto_apply: dependents
+    build_to: source

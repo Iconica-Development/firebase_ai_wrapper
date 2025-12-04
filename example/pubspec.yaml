@@ -1,0 +1,27 @@
+name: firebase_ai_wrapper_example
+description: Example app demonstrating firebase_ai_wrapper usage
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^4.2.1
+  firebase_ai: ^3.6.0
+  firebase_ai_wrapper:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.13
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
